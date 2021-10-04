@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>OSE 5th Week Challenge</title>
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+</head>
+<body style="margin-left: 2rem;">
+    <header>
+        <!-- no header this time, But the Materialize style used, look above  -->
+    </header>
+
+    <article>
+        <h1>OSE 5th Week Challenge</h1>
+        
+        <h2>Number Analyzer case</h2>
+        <p>
+            <label for="inputNumber">Enter a number: </label>
+            <input id="inputNumber" type="text" />
+            <button id="analyze" onclick="doTheAnalysis()">Press to analyze the number</button>
+        </p>
+        <hr />
+        
+        <p>
+            You entered <span id="countNumber"></span> number(s): <span id="enteredNumber"></span>
+        </p>
+        <h4>Average</h4>
+        <p>
+            The average is <span id="avgOutput">N/A</span>, so far. 
+        </p>
+        <hr />
+
+        <h4>Min and Max</h4>
+        <p>
+            The minimum is <span id="minOutput">N/A</span>
+            and the maximum is <span id="maxOutput">N/A</span>, so far. 
+        </p>
+        <hr />
+
+        <h4>Divisible by Three</h4>
+        <p>
+            The values that are divisible by three and still bigger than zero
+                        are:
+        </p>
+        <p id="divisibleByThree"></p>
+        <hr />
+
+        <h4>Even numbers down before next full ten</h4>
+        <p>
+            The even values from current number downwards before reaching a full
+            ten, like 110 or 20 (or 0) are:</p>
+        <p id="evenNumbers"></p>
+        <hr />
+
+        <h4>Prime Number test</h4>
+        <p id="primeNumber"></p>
+        <hr />
+        
+    </article>
+        
+    <!-- JavaScript run after the body items have been added to the DOM -->
+    <script src="number_analyzer.js"></script> 
+</body>
+</html>
